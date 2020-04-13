@@ -1,9 +1,9 @@
 import React from "react";
 
-function RefreshButton({handleWeatherRefresh}) {
+function RefreshButton({getWeatherData}) {
 
     const onRefreshClick = () => {
-        handleWeatherRefresh(true);
+        getWeatherData();
     }
 
     return (

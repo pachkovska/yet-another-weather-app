@@ -8,15 +8,10 @@ import WeatherData from "./components/WeatherData";
 function App() {
 
     const [location, setLocation] = useState('');
-    const [weatherRequested, setWeatherRequested] = useState(false);
     const [weatherData, setWeatherData] = useState({});
 
     const handleLocationChange = (locationName) => {
         setLocation(locationName);
-    }
-
-    const handleWeatherRefresh = () => {
-        setWeatherRequested(!weatherRequested);
     }
 
     const getWeatherData = () => {
@@ -41,10 +36,10 @@ function App() {
                 handleLocationChange={(locationName) => handleLocationChange(locationName)}
             />
             <RefreshButton
-                handleWeatherRefresh={handleWeatherRefresh}
+                getWeatherData={getWeatherData}
             />
             <WeatherData
-                getWeatherData={getWeatherData}
+                weatherData={weatherData}
             />
         </div>
     );
