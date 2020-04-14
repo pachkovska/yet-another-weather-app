@@ -7,9 +7,9 @@ function RefreshButton({getWeatherData}) {
     }
 
     return (
-        <button onClick={onRefreshClick}>
-            REFRESH
-        </button>
+            <button onClick={onRefreshClick}>
+                REFRESH
+            </button>
     )
 }
 
