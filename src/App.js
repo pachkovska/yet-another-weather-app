@@ -18,7 +18,7 @@ function App() {
 
     const getWeatherData = () => {
         const query = location.replace(/ /g, '+');
-        const url = `http://api.openweathermap.org/data/2.5/weather?q=${query}&appid=973f1d73a370ab053bfe7255e9bf56e9`;
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=973f1d73a370ab053bfe7255e9bf56e9`;
         axios.get(url)
             .then(function (response) {
                 console.log(response);
