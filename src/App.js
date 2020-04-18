@@ -88,6 +88,7 @@ function App() {
             <div className={"weatherContainer"}>
                 <DegreeScaleButtons
                     handleScaleChange={handleScaleChange}
+                    degreeScale={degreeScale}
                 />
                 <div className={"controls"}>
                     <LocationInput
